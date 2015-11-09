@@ -4,3 +4,7 @@ main{
 	font-family: Courier New;
 	width: 40em;
 }
+
+section{
+	line-height: 2em;
+}
