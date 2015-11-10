@@ -1,0 +1,42 @@
+html{
+	background-color: #FFEBCD;
+}
+
+header{
+	text-align: center;
+	color: #A0522D;
+	font-family: Courier New;
+}
+
+main{
+	margin-left: auto;
+	margin-right: auto;
+	width: 25em;
+}
+
+nav{
+	text-align: center;
+	font-family: Courier New;
+}
+
+a:link{
+	color: brown;
+	font-family: Courier New;
+}
+
+a:visited{
+	color: #D2B48C;
+	text-decoration: none;
+	font-family: Courier New;
+}
+
+a:hover{
+	color: #F5DEB3;
+	font-family: Courier New;
+}
+
+footer{
+	color: #A0522D;
+	font-family: Courier New;
+	font-size: .75em;
+}
