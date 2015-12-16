@@ -2,6 +2,14 @@ html{
 	background-color: #FFEBCD;
 }
 
+div {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 125px
+}
+
 header{
 	text-align: center;
 	color: #A0522D;
