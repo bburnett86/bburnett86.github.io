@@ -8,3 +8,11 @@ main{
 section{
 	line-height: 2em;
 }
+
+span {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 125px
+}
