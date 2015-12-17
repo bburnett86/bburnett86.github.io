@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link type = "text/css" rel = "stylesheet" href ="../../bburnett86.github.io/stylesheets/default.css">
+  <link type = "text/css" rel = "stylesheet" href ="../../bburnett86.github.io/stylesheets/blog.css">
+    <title>
+      The Road To Ruby
+    </title>
+    <meta charset="UTF-8">
+</head>
+<body>
+  <header>
+        <h1>The Road To Ruby</h1>
+      </header>
+      <hr>
+  <nav>
+    <a href ="#">Portfolio </a>|
+    <a href = "../bburnett86.github.io/blog/index.html"> Blog Index</a>|
+    <a href = "../bburnett86.github.io/blog/about.html"> About Me!</a>
+  </nav>
+  <hr>
+  <main>
+    <content class = "tab">
+    <content>
+    <p>
+      <tab>Today</tab> we'll be discussing best practices to writing <strong>Instance Methods</strong>, <strong> Local Variables</strong> and <strong>Instance Variables</strong> Instead of having this page be extremely long, I'd like to you click here: <a href ="../../bburnett86.github.io/blog/blog_examples/ruby-classes-example.html">Ruby Die Class</a> to view the example we'll be using today.
+    </p>
+    <p>
+      <tab>So</tab> what we're trying to do today, is find the most effective ways to set up variables and methods throughout within our class. We're going to use a die (singular of dice) in order to illustrate this example.
+    </p>
+    <p>
+      <tab>Let's</tab> start with <strong>Instance Methods</strong>. Our <strong>Instance Methods</strong> in this example(because they don't have to be but in this case are) held within our class, Die class. Everything we'll be using today will be within our instance methods. Our instance methods are the two white bolded words within the die class. You can usually tell an instance method as it is named right after the word "def" in Ruby. There's also another bolded "roll" outside of the Die class. That is not an Instance Method. Instead, after we've called a new Die class, that's what we use in order to call the <strong>Instance Method</strong>. If you don't call the <strong>Instance Method</strong> on the new occurance, it will never happen.
+    </p>
+    <p>
+      <tab>Within</tab> those <strong> Instance Methods</strong> are <strong>Local Varibles</strong> and <strong>Instance Variables</strong>. As you can guess they're both variables, but where they differ is their range in terms of where they are able to be called within the class and how they're coded.
+    </p>
+    <p>
+      <strong>Local Variables</strong> are variables that can be called anywhere within their <strong>Instance Method</strong>. For example the mint green "sides" inside of the initialize <strong>Instance Method</strong> is a <strong>Local Variable</strong>. It's actually the only one that we have in this example, and there's reason for that. <strong>Local Variables</strong> have names that start with a lower case letter or the underscore character (_) and can only be used within that class/scope. Another interesting thing about <strong>Local Variables</strong> is that they do not have the value "nil" before initialization. If you ask for their value before they're given a value at initialization it will return an error. Now I'm sure you're wondering why the "sides" inside of the parenthesis next to the initialize <strong>Instance Method</strong> isn't a <strong>Local Variable</strong>. That sides is actually used as the argument for the initialize <strong>Instance Method</strong>. It lets us know the number of, and what the arguments are for the <strong>Instance Method</strong>. For example if the parenthesis read (sides, color) it would let us know that the instance method is taking two different arguments, one for sides, and one for color (which I haven't accounted for).
+    </p>
+    <p>
+      So I know you're like, what about all the other "sides" in the Die class that start with @? The pink "@sides" are all, you guessed it <strong>Instance Variables</strong>. <strong>Instance Variables</strong> are named the same as <strong>Local Variables</strong> except before the the lower case letter or underscore there's an @ symbol. The @ symbol lets us know that it's an <strong>Instance Variable</strong>. Besides having the cool @ symbol there's more benefits to <strong>Instance Variables</strong>. <strong>Instance Variables</strong> have the ability to be called anywhere within the scope of the class. So you can call an <strong>Instance Variable</strong> in any <strong>Instance Method</strong> within a class. So I'm sure you're wondering, why not just make everything an <strong>Instance Variable</strong>? Well with the initialize <strong>Instance Method</strong> you actually need that <strong>Local Variable</strong> "string" in order to get the information from the argument, to place into the <strong>Instance Variable</strong> "@string". So, although all variables are not created equal, they should all be appreicated just the same.
+    </p>
+    <p>
+      So I know we've gone over a lot today, but I'm sure if you don't know now, when you understand how vital <strong>Instance Methods</strong>, <strong>Local Variables</strong> and <strong>Instance Variables</strong> will to your coding, you'll appreciate it.
+    </p>
+  </content>
+  </main>
+  <hr>
+  <nav>
+    <a href ="#">Facebook </a>|
+    <a href = "#"> Instagram </a>|
+    <a href = "#"> Twitter</a>
+  </nav>
+  <hr>
+  <footer>
+    <h5><!-- Last updated November 2015 --></h5>
+  </footer>
+</body>
+</html>
