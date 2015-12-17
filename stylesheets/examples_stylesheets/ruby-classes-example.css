@@ -1,0 +1,60 @@
+.tab p1{
+margin-left:3em
+}
+
+.tab p2{
+margin-left:6em
+}
+
+.tab p3{
+margin-left:9em
+}
+
+p instance_method{
+  font-weight: bold;
+  color: #F5FFFA;
+}
+
+p1 instance_method{
+  font-weight: bold;
+  color: #F5FFFA;
+}
+
+p instanceV{
+  font-weight: bold;
+  color: #FA8072;
+}
+
+p2 instanceV{
+  font-weight: bold;
+  color: #FA8072;
+}
+
+p localV{
+  font-weight: bold;
+  color: #BDFCC9;
+}
+
+p2 localV{
+  font-weight: bold;
+  color: #BDFCC9;
+}
+
+main{
+  margin-left:12em;
+  margin-top:10px;
+}
+
+content{
+  text-align: left;
+  width: 65em;
+}
+
+key{
+  margin-left:12em;
+  text-align: left;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
