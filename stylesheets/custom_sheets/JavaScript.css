@@ -1,0 +1,35 @@
+/*Color Chosen*/
+p object{
+  font-weight: bold;
+  color: #FA8072;
+}
+
+/*Color Chosen*/
+p property{
+  font-weight: bold;
+  color: #F7B3DA;
+}
+
+/*Color Chosen*/
+p propertyValue{
+  font-weight: bold;
+  color: #EEE0E5;
+}
+
+/*Color Chosen*/
+p hash{
+  font-weight: bold;
+  color: #3F602B;
+}
+
+/*Color Chosen*/
+p keys{
+  font-weight: bold;
+  color: #66CD00;
+}
+
+/*Color Chosen*/
+p keyValue{
+  font-weight: bold;
+  color: #F5FFFA;
+}
