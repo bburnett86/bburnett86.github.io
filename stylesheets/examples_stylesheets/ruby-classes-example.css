@@ -1,13 +1,13 @@
-.tab p1{
-margin-left:3em
+p1 tab{
+margin-left:2em
 }
 
-.tab p2{
+p2 tab{
+margin-left:4em
+}
+
+p3 tab{
 margin-left:6em
-}
-
-.tab p3{
-margin-left:9em
 }
 
 p instance_method{
