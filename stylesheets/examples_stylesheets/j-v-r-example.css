@@ -1,0 +1,94 @@
+/*Tabs used to indent paragraphs based on paragraph*/
+.tab p1{
+margin-left:3em
+}
+
+.tab p2{
+margin-left:6em
+}
+
+/*Paragraph specific highlights. Need to find a better way to have these distributed in the future*/
+/*Color Chosen*/
+p object{
+  font-weight: bold;
+  color: #FA8072;
+}
+
+/*Color Chosen*/
+p property{
+  font-weight: bold;
+  color: #F7B3DA;
+}
+
+/*Color Chosen*/
+p propertyValue{
+  font-weight: bold;
+  color: #EEE0E5;
+}
+
+/*Color Chosen*/
+p hash{
+  font-weight: bold;
+  color: #3F602B;
+}
+
+/*Color Chosen*/
+p keys{
+  font-weight: bold;
+  color: #66CD00;
+}
+
+p1 hash{
+  font-weight: bold;
+  color: #3F602B;
+}
+
+/*Color Chosen*/
+p keyValue{
+  font-weight: bold;
+  color: #F5FFFA;
+}
+
+p1 keys{
+  font-weight: bold;
+  color: #66CD00;
+}
+
+
+p1 keyValue{
+  font-weight: bold;
+  color: #F5FFFA;
+}
+
+p1 object{
+  font-weight: bold;
+  color: #FA8072;
+}
+
+p1 property{
+  font-weight: bold;
+  color: #F7B3DA;
+}
+
+p1 propertyValue{
+  font-weight: bold;
+  color: #EEE0E5;
+}
+
+main{
+  margin-left:12em;
+  margin-top:10px;
+}
+/*Content Info, not to be changed*/
+content{
+  text-align: left;
+  width: 65em;
+}
+
+/*Key Specifics, not to be changed*/
+key{
+  text-align: left;
+  margin-left:auto;
+  margin-right:auto;
+}
+
