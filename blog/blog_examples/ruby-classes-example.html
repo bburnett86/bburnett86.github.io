@@ -30,17 +30,17 @@
       <content class= "attr">
       <content class= "tab">
       <p>class Die</p>
-        <p1>attr_reader :sides</p>
-        <p1>def <instance_method>initialize</instance_method>(sides)</p>
-          <p2><instanceV>@sides</instanceV> = <localV>sides</localV></p>
-          <p2>if <instanceV>@sides</instanceV> < 1</p>
-            <p3>raise ArgumentError.new("Only integers greater than 0 allowed")</p>
-          <p2>end</p>
-        <p1>end</p>
+        <p1><tab>attr_reader</tab> :sides</p>
+        <p1><tab>def</tab> <instance_method>initialize</instance_method>(sides)</p>
+          <p2><tab><instanceV>@sides</instanceV></tab> = <localV>sides</localV></p>
+          <p2><tab>if</tab> <instanceV>@sides</instanceV> < 1</p>
+            <p3><tab>raise</tab> ArgumentError.new("Only integers greater than 0 allowed")</p3><p></p>
+          <p2><tab>end</tab></p2>
+        <p>end</p><p></p>
 
-        <p1>def <instance_method>roll</instance_method></p>
-          <p2><instanceV>@roll</instanceV> = 1 + rand(<instanceV>@sides</instanceV>)</p>
-        <p1>end</p>
+        <p1><tab>def</tab> <instance_method>roll</instance_method></p>
+          <p2><tab><instanceV>@roll</instanceV></tab> = 1 + rand(<instanceV>@sides</instanceV>)</p>
+        <p1><tab>end</tab></p>
       <p>end</p>
 
       <p>guess = Die.new (14)</p>

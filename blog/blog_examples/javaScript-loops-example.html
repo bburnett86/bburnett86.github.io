@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link type = "text/css" rel = "stylesheet" href ="../../stylesheets/default.css">
+  <link type = "text/css" rel = "stylesheet" href ="../../stylesheets/blog.css">
+  <link type = "text/css" rel = "stylesheet" href ="../../stylesheets/examples_stylesheets/javaScript-examples.css">
+    <title>
+      JavaScript Looping Example
+    </title>
+    <meta charset="UTF-8">
+</head>
+<body>
+  <header>
+        <h1>JavaScript Looping Example</h1>
+      </header>
+      <hr>
+  <nav>
+    <a href = "../../projects/index.html"> Portfolio</a>
+    <a href = "../../blog/index.html"> Blog Index</a>|
+    <a href = "../../about.html"> About Me!</a>
+  </nav>
+    <hr>
+  <main>
+      <p>
+      <p>
+    <content>
+      <content class= "object_name">
+      <content class= "property">
+      <content class= "propertyV">
+      <content class= "iterator">
+      <content class= "variable">
+
+      <content class= "tab"<!-- Tab Class for making indents -->
+        <!-- Used p, p1, etc in conjunction with tab on CSS sheet to determine indent -->
+        <!-- Created content classes to highlight material on page, specifics determined in CSS sheet -->
+<p>var votes = {</p>
+  <p1><tab><object_name>"Alex"</object_name>: { <property>president</property>:<propertyV>"Bob",</propertyV> <property>vicePresident</property>:<propertyV>"Devin",</propertyV> <property>secretary</property>:<propertyV>"Gail",</propertyV> <property>treasurer</property>: <propertyV>"Kerry"</propertyV> },</p1><p></p>
+  <p1><tab><object_name>"Bob"</object_name>: { <property>president</property>:<propertyV>"Mary",<property>vicePresident</property>:<propertyV>"Hermann",</propertyV> <property>secretary</property>:<propertyV>"Fred",</propertyV> <property>treasurer</property>:<propertyV>"Ivy"</propertyV> },</p1><p></p>
+  <p1><tab><object_name>"Cindy"</object_name>: { <property>president</property>:<propertyV>"Cindy",<property>vicePresident</property>:<propertyV>"Hermann",</propertyV> <property>secretary</property>:<propertyV>"Bob",</propertyV> <property>treasurer</property>:<propertyV>"Bob"</propertyV> },</p1><p></p>
+  <p1><tab><object_name>"Devin"</object_name>: { <property>president</property>:<propertyV>"Louise",</propertyV> <property>vicePresident</property>:<propertyV>"John",</propertyV> <property>secretary</property>:<propertyV>"Bob",</propertyV> <property>treasurer</property>:<propertyV>"Fred"</propertyV> },</p1><p></p>
+  <p1><tab><object_name>"Ernest"</object_name>: { <property>president</property>:<propertyV>"Fred",</propertyV> <property>vicePresident</property>:<propertyV>"Hermann",</propertyV> <property>secretary</property>:<propertyV>"Fred",</propertyV> <property>treasurer</property>:<propertyV>"Ivy"</propertyV> },</p1><p></p>
+  <p1><tab><object_name>"Fred"</object_name>: { <property>president</property>:<propertyV>"Louise",</propertyV> <property>vicePresident</property>:<propertyV>"Alex",</propertyV> <property>secretary</property>:<propertyV>"Ivy",</propertyV> <property>treasurer</property>:<propertyV>"Ivy"</propertyV> },</p1><p></p>
+  <p1><tab><object_name>"Gail"</object_name>: { <property>president</property>:<propertyV>"Fred",</propertyV> <property>vicePresident</property>:<propertyV>"Alex",</propertyV> <property>secretary</property>:<propertyV>"Ivy",</propertyV> <property>treasurer</property>:<propertyV>"Bob"</propertyV> }</p1><p></p>
+<p>}</p>
+<br>
+<p>var voteCount = {</p>
+  <p1><tab>president: {},</p1><p></p>
+  <p1><tab>vicePresident: {},</p1><p></p>
+  <p1><tab>secretary: {},</p1><p></p>
+  <p1><tab>treasurer: {}</p1><p></p>
+<p>}</p>
+<br>
+<p>var officers = {</p>
+  <p1><tab>president: undefined,</p1><p></p>
+  <p1><tab>vicePresident: undefined,</p1><p></p>
+  <p1><tab>secretary: undefined,</p1><p></p>
+  <p1><tab>treasurer: undefined</p1><p></p>
+<p>}</p>
+<br>
+<p>function count(votes){</p>
+  <p1><tab><loop>for</loop> (var <variable>voter</variable> <loop>in</loop> <object_name>votes</object_name>){</p1><p></p>
+    <p2><tab><loop>for</loop> (var <variable>office</variable> <loop>in</loop> <object_name>votes[voter]</object_name>){</p2><p></p>
+      <p3><tab>var <variable>candidate</variable> = <object_name>votes[voter][office]</object_name>;</p3><p></p>
+      <p3><tab>if (voteCount[office][candidate]==undefined)</p3><p></p>
+       <p4><tab>{voteCount[office][candidate]=0;}</p4><p></p>
+      <p3><tab>voteCount[office][candidate]+=1;</p3><p></p>
+    <p2><tab>}</p2><p></p>
+  <p1><tab>}</p1><p></p>
+<p>}</p>
+<p>count(votes)</p>
+<p>console.log(voteCount)</p>
+<br>
+<p>function winner(voteCount){</p>
+  <p1><tab><loop>for</loop> (var <variable>office</variable> <loop>in</loop> <object_name>voteCount</object_name>){</p1><p></p>
+    <p2><tab>var mostVotes = 0;</p2><p></p>
+    <p2><tab><loop>for</loop>(var <variable>candidate</variable> <loop>in</loop> <object_name>voteCount[office]</object_name>){</p2><p></p>
+      <p3><tab>if (voteCount[office][candidate] > mostVotes){</p3><p></p>
+        <p4><tab>mostVotes = voteCount[office][candidate]</p4><p></p>
+        <p4><tab>officers[office] = candidate</p4><p></p>
+      <p3><tab>}</p3><p></p>
+    <p2><tab>}</p2><p></p>
+  <p1><tab>}</p1><p></p>
+<p>}</p>
+<br>
+<p>winner(voteCount)</p>
+<p>console.log(officers)</p>
+
+    </content>
+      <hr>
+      <key>
+      <key class= "object_name">
+      <key class= "property">
+      <key class= "propertyV">
+      <key class= "iterator">
+      <key class= "variable">
+      <p>
+        <strong>Key:</strong><object_name>Object Name   </object_name><property>Property    </property><propertyV>Property Value   </localV><loop>Loop   </loop><variable>Varible   </variable>
+      </p>
+    </key>
+  </main>
+  <nav>
+    <hr>
+  </nav>
+  <footer>
+    <h5>Last updated December 2015 </h5>
+  </footer>
+</body>
+</html>
