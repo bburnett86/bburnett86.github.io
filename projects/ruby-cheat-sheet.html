@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link type = "text/css" rel = "stylesheet" href ="../stylesheets/default.css">
+  <link type = "text/css" rel = "stylesheet" href ="../stylesheets/blog.css">
+  <link type = "text/css" rel = "stylesheet" href ="../stylesheets/custom_sheets/looping.css">
+    <title>
+      Using the Library's Looping System
+    </title>
+    <meta charset="UTF-8">
+</head>
+<body>
+  <header>
+    <h1>Using the Library's Looping System</h1>
+  </header>
+  <hr>
+  <nav>
+    <a href ="../index.html"> Home</a> |
+    <a href = "../blog/index.html"> Blog Index</a> |
+    <a href = "../about.html"> About Me</a>
+  </nav>
+  <hr>
+  <main>
+    <content class = "tab">
+    <content class = "loop">
+    <content class = "conditional">
+    <content class = "object_name">
+    <content class = "property">
+    <content class = "propertyV">
+    <content>
+    <p>
+     Welcome back to the World Code Library, I'll be your guide to the intermediate level of our library. Today we'll be learning how to loop through JavaScript Objects as well as Ruby Arrays and Hashes. Now as we learned previously JavaScript Objects, Ruby Arrays, and Ruby Hashes are all libraries, code used to store information. Inside of those libraries we can have anything that we would like to access later by a list. Now what good is a library if you can't find the data? The best way to find the data you're looking for is to find the correct iterator and code that corresponds to what you're looking for. Now, just like last time, I wouldn't be a good guide if I didn't provide a map of where we're going today. <a href= "../blog/blog_examples/ruby-loops-examples.html" target="_blank"> Padding a Ruby Array</a> and <a href="../blog/blog_examples/javaScript-loops-example.html" target="_blank"> Counting Votes</a> are the library sections we'll be looking into today. Now follow closely, and don't get lost.
+    </p>
+    <p>
+      First we will visit <a href= "../blog/blog_examples/ruby-loops-examples.html" target="_blank"> Padding a Ruby Array</a> so you can get a good example looping through a ruby array. The objective of looping is literally getting the computer to loop through all of the options so that if finds what you're looking for. The basic structure of a ruby loop is:
+    </p>
+    <p>
+      collection.<loop>loop_name do</loop> |element|</p1><p></p>
+        <p1><tab>code</p1><p></p>
+      <p>end</p>
+      <br>
+      <p><loop>while</loop> <conditional>conditional <=> conditional</conditional> <loop>do</loop></p>
+        <p1><tab>code</p1><p></p>
+      <p>end</p>
+      <p>
+        These blocks of code literally hold the secret to finding anything you want in our Ruby Libraries. The first statement is most commonly found in an <loop>each</loop> or <loop>collect</loop> iteration where the name of your collection (array or hash) would be combined with the if or collect iterators by a period. The word do and a variable name that you'd create for what you would like to represent as the indexes or key/value pairs as you work through the code. So for each condition in the collection the code will do a specific thing regarding it. In our <a href= "../blog/blog_examples/ruby-loops-examples.html" target="_blank"> Padding a Ruby Array</a> example we use the second set of code from above. Now, the <loop>while</loop> loop's structure doesn't only apply to <loop>while</loop>, there are several other loops that follow the same structure. In that category of loops there is:  <loop>while</loop>, <loop>for</loop>, <loop>until</loop>, <loop>break</loop>, <loop>redo</loop>, and <loop>retry</loop>. All of these can be used (actually similarly to how you'd read them in english) to evaluate code in a Library using the same structure. Now, back to our example. Initially in our pad method we created an <conditional>additional_num</conditional> variable essentially to be a counter object. The number in that object created by the arguments for minimum size of and array and array.length create our counter object. We use that object in conjunction with the <loop>while</loop> loop to add a value to a new array every time we loop through that array <loop>while</loop> our conditional <conditional>additional_num</conditional> is greater than (<) zero. It's a lot to explain the rest of the code in the example, so feel free to use it in your terminal with arguments of an array, the minimum length you want the array, and a value you would like to be repeated for every one length the array is short of the minimum length.
+      </p>
+      <p>
+        Now in JavaScript on the other hand there's different structures for your loop based on the iterating statement you use to run your code. There are several iterating statements in ruby. There's the <loop>for</loop> statement, <loop>do...while</loop> statement, <loop>while</loop> statement, <loop>label</loop> statement, <loop>break</loop> statement, <loop>continue</loop> statement, <loop>for...in</loop> statement, and the <loop>for...of</loop> statement. Now, I wont be covering all of these today, thanks to the great people at Google you can look up this information at any time. What I will touch on today are the statements I most commonly use being the <loop>for</loop>, <loop>while</loop>, and <loop>for...in</loop> iterators. Here are some examples of their structures:</p>
+      <p>
+      <loop>for</loop> ([initialization]; <conditional>[condition]</conditional>; [counter]){</p>
+        <p1><tab>code</p1><p></p>
+      <p>}</p>
+      <br>
+      <p><loop>while</loop> <conditional>(condition)</conditional> {</p>
+        <p1><tab>code</p1><p></p>
+      <p>}</p>
+      <br>
+      <p><loop>for</loop> (variable <loop>in</loop> object){</p>
+        <p1><tab>code</p1><p></p>
+      <p>}</p>
+      <p>
+        So, the <loop>for</loop> statement loops through a block of code a specific number of times using three parameters: the initialization, the condition, and it's counter. The initialization is an expression used to initialize a counter variable. From my experience, this expression is usually a var expression a variable (once more counter <strong>VARIABLE</strong>). The <conditional>condition</conditional> states the <conditional>condition</conditional> (how many times) at which you'll be going through the block. It does this by using a number in relation to the counter variable, where the counter variable being be greater than, less than or equal to that number stops the code from running. The last portion, the counter, is there to let you know the increments by which you'll be adding or subtracting from your counter variable. So for example if your initialization was var y = 0, your counter variable was y < 5 and your counter was y++. Starting at 0 it would iterate through 4 items in whatever collection applying code to them because it will only iterate until y is greater than 5. Next let's go over the <loop>while</loop> loop, which is substantially simpler. It simply states <loop>while</loop> a <conditional>condition</conditional> is set, perform this code. Hmmm... Sounds similar to something we've done before... Let's get to that later. Lastly I would like to touch on the <loop>for...in</loop> loop. This loop is special, it actually lets us iterate through JavaScript objects so we can have access to their properties and values. What this is saying is <loop>for</loop> our variable inside of a JavaScript Object execute this code. This is extremely helpful if you would like to be able to iterate through JavaScript objects or Objects of Objects as we have in our example <a href="../blog/blog_examples/javaScript-loops-example.html" target="_blank"> Counting Votes</a>. In this example I highlighted the <object_name>JavaScript Object</object_name> as well as it's <property>properties</property> and respected <propertyV>values</propertyV> so you can see the make-up of our <object_name>JavaScript Object</object_name>. This code uses the <loop>for...in</loop> loop to count each person's votes per position, then announce the winner. It uses the <loop>for...in</loop> to not only access the objects within the variable votes, but also goes a step further from that list to access the properties and values within those objects. Thus instead of just going just the first layer <loop>for</loop> (var <object_name>voter</object_name> <loop>in</loop> votes){ which would make <object_name>voter</object_name> equivalent to the level in the variable equal to the first name <object_name>"Alex"</object_name> but wouldn't give you access to any of it's attributes. So it went in another level deeper saying <loop>for</loop> (var <property>office</property> in votes<property>[voter]</property>){ which essentially states that now we can iterate over the <property>properties</property> in the <object_name>objects</object_name> using the <property>office</property> variable. And that's great to let us know what office people were voting for, but what about the names? We still have to go a layer deeper into the object, but seeing as this is our last step, we wont have to use another <loop>for...in</loop> loop. In this instance we use var <propertyV>candidate</propertyV> = votes<object_name>[voter]</object_name><property>[office]</property>; so that we can iterate through all of the <propertyV>property values</propertyV> of the <property>office</property> property (the names of the people who we're voting into office) through the <propertyV>candidates</propertyV> variable. Another thing you'll realize about the <loop>for...in</loop> loop is that it's the only one that doesn't have a conditional. That's because you're operating the code with the condition that there's either an object or a <property>property</property> and <propertyV>property value</propertyV> pair for you to access. Also, you can run the code from our <a href="../blog/blog_examples/javaScript-loops-example.html" target="_blank"> Counting Votes</a> example using node in command line to see who won based on those votes.
+      </p>
+      <p>
+        So we saw a lot of things today. A few things I'd like you to keep in mind when looping using Ruby and JavaScript. Whenever you loop in these two languages you will see that you need a <loop>loop</loop> and a <conditional>condition</conditional> under which you'll be using the loop. No matter what language you're using you also have to end the loop statement when you're finished, in JavaScript it means closing your curly brackets ({}) and in Ruby it means making sure you have the right amount of ends for your method. Also, Ruby has two main code structures for it's loops while JavaScript has several different structures you can use while looping through libraries. Either way, you're still just starting to grasp what you can do in the World Code Library, feel free to explore more.
+  </p>
+  </content>
+  </main>
+  <hr>
+  <footer>
+    <h5>Last Updated January 2016</h5>
+  </footer>
+</body>
+</html>

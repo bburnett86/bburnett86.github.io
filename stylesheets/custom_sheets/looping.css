@@ -1,0 +1,38 @@
+p1 tab{
+margin-left: 2em;
+}
+
+p conditional{
+  font-weight: bold;
+  color: #397D02;
+}
+
+p1 conditional{
+  font-weight: bold;
+  color: #397D02;
+}
+
+p loop{
+  font-weight: bold;
+  color: #FA8072;
+}
+
+p1 loop{
+  font-weight: bold;
+  color: #FA8072;
+}
+
+p object_name{
+  font-weight: bold;
+  color: #F5FFFA;
+}
+
+p property{
+  font-weight: bold;
+  color: #CDE1FF;
+}
+
+p propertyV{
+  font-weight: bold;
+  color: #BDFCC9;
+}
