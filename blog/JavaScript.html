@@ -3,16 +3,25 @@
 <head>
   <link type = "text/css" rel = "stylesheet" href ="../stylesheets/default.css">
   <link type = "text/css" rel = "stylesheet" href ="../stylesheets/blog.css">
+  <link type = "text/css" rel = "stylesheet" href ="../stylesheets/custom_sheets/blog_index.css">
   <link type = "text/css" rel = "stylesheet" href ="../stylesheets/custom_sheets/JavaScript.css">
     <title>
       Ruby Vs. JavaScript: Two Libraries, One Language
     </title>
     <meta charset="UTF-8">
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link href="http://codegena.com/assets/css/image-preview-for-link.css" rel="stylesheet">
+    <script type="text/javascript">
+    $(function() {
+                $('#p1 a').miniPreview({ prefetch: 'pageload' });
+                $('#p2 a').miniPreview({ prefetch: 'parenthover' });
+                $('#p3 a').miniPreview({ prefetch: 'none' });
+            });
+    </script> <script src="http://codegena.com/assets/js/image-preview-for-link.js"></script>
 </head>
 <body>
   <header>
-    <h1>Ruby Vs. JavaScript:</h1>
-    <h3>Two Libraries, One Language</h3>
+    <h1>Tech Talk</h1>
   </header>
   <hr>
   <nav>
@@ -23,7 +32,11 @@
   <hr>
   <main>
     <content class = tab>
-    <content>
+    <content id = "p1">
+    <section>
+      <h3>Ruby Vs. JavaScript:</h3>
+      <h5>Two Libraries, One Language</h5>
+    </section>
     <p>
       <tab>Welcome</tab> to the World Code Library, as mandatory for first timers I will be your tour guide. Let me explain where you are. Here we store every code database known to man in physical form. To your left is a chair that someone forgot to code a color into, yes, it is clear at the moment. For obvious reasons our building is constantly growing and changing. As your tour guide, I am also the gate keeper, I will make sure that you have at least a basic understanding of libraries in at least two coding languages. We wouldn't want to just let you walk around here, a new guy wandered into the Python pit last week, and that didn't end well.
     </p>
@@ -48,8 +61,8 @@
   </content>
   </main>
   <hr>
-  <footer>
-    <h5>Last updated January 2016</h5>
-  </footer>
+  <section>
+  <p><a href = "ruby-classes.html">Previous</a>  |  <a href = "ruby-rails.html">Next</a></p>
+  </section>
 </body>
 </html>

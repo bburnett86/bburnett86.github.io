@@ -8,10 +8,20 @@
       Using the Library's Looping System
     </title>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link href="http://codegena.com/assets/css/image-preview-for-link.css" rel="stylesheet">
+    <script type="text/javascript">
+    $(function() {
+                $('#p1 a').miniPreview({ prefetch: 'pageload' });
+                $('#p2 a').miniPreview({ prefetch: 'parenthover' });
+                $('#p3 a').miniPreview({ prefetch: 'none' });
+            });
+    </script> <script src="http://codegena.com/assets/js/image-preview-for-link.js"></script>
 </head>
 <body>
   <header>
-    <h1>Using the Library's Looping System</h1>
+    <h1>Tech Talk</h1>
   </header>
   <hr>
   <nav>
@@ -27,7 +37,10 @@
     <content class = "object_name">
     <content class = "property">
     <content class = "propertyV">
-    <content>
+    <content id = "p1">
+    <section>
+      <h3>Using the Library's Looping System</h3>
+    </section>
     <p>
      Welcome back to the World Code Library, I'll be your guide to the intermediate level of our library. Today we'll be learning how to loop through JavaScript Objects as well as Ruby Arrays and Hashes. Now as we learned previously JavaScript Objects, Ruby Arrays, and Ruby Hashes are all libraries, code used to store information. Inside of those libraries we can have anything that we would like to access later by a list. Now what good is a library if you can't find the data? The best way to find the data you're looking for is to find the correct iterator and code that corresponds to what you're looking for. Now, just like last time, I wouldn't be a good guide if I didn't provide a map of where we're going today. <a href= "../blog/blog_examples/ruby-loops-examples.html" target="_blank"> Padding a Ruby Array</a> and <a href="../blog/blog_examples/javaScript-loops-example.html" target="_blank"> Counting Votes</a> are the library sections we'll be looking into today. Now follow closely, and don't get lost.
     </p>

@@ -3,17 +3,27 @@
 <head>
     <link type = "text/css" rel = "stylesheet" href ="../stylesheets/default.css">
     <link type = "text/css" rel = "stylesheet" href ="../stylesheets/blog.css">
+    <link type = "text/css" rel = "stylesheet" href ="../stylesheets/custom_sheets/blog_index.css">
     <title>
       The Road To Ruby
     </title>
     <meta charset="UTF-8">
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link href="http://codegena.com/assets/css/image-preview-for-link.css" rel="stylesheet">
+    <script type="text/javascript">
+    $(function() {
+                $('#p1 a').miniPreview({ prefetch: 'pageload' });
+                $('#p2 a').miniPreview({ prefetch: 'parenthover' });
+                $('#p3 a').miniPreview({ prefetch: 'none' });
+            });
+    </script> <script src="http://codegena.com/assets/js/image-preview-for-link.js"></script>
 </head>
 <body>
   <span>
       <a href ="http://www.twitter.com/eazydoesnt"><img src = "../imgs/Twitter_logo_blue.png"/></a>
   </span>
   <header>
-    <h1>The Road To Ruby</h1>
+    <h1>Tech Talk</h1>
   </header>
   <hr>
   <nav>
@@ -25,7 +35,10 @@
   <main>
     <content class = "tab">
     <content>
-    <p>
+    <section>
+    <h3>The Road To Ruby</h3>
+    </section>
+    <p id = "p1">
       <tab>Today</tab> we'll be discussing best practices to writing <strong>Instance Methods</strong>, <strong> Local Variables</strong> and <strong>Instance Variables</strong> Instead of having this page be extremely long, I'd like to you click here: <a href ="../blog/blog_examples/ruby-classes-example.html" target="_blank">Ruby Die Class</a> to view the example we'll be using today.
     </p>
     <p>
@@ -49,8 +62,8 @@
   </content>
   </main>
   <hr>
-  <footer>
-    <h5>Last updated January 2016</h5>
-  </footer>
+  <section>
+  <p><a href = "arraysHashes.html">Previous</a>  |  <a href = "javaScript.html">Next</a></p>
+  </section>
 </body>
 </html>
